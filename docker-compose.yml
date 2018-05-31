@@ -1,0 +1,18 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:9.6
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=rw_customer
+      - POSTGRES_USER=rw_customer
+      - POSTGRES_PASSWORD=rw_customer
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "5775:5775/udp"
+      - "6831:6831/udp"
+      - "6832:6832/udp"
+      - "16686:16686"
+
