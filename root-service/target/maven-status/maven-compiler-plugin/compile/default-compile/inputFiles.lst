@@ -1,0 +1,5 @@
+/Users/emerson/Projetos/pessoal/opentracing-poc/root-service/src/main/java/br/com/poc/opentracing/rootservice/configuration/TracerConfiguration.java
+/Users/emerson/Projetos/pessoal/opentracing-poc/root-service/src/main/java/br/com/poc/opentracing/rootservice/controller/CustomerApi.java
+/Users/emerson/Projetos/pessoal/opentracing-poc/root-service/src/main/java/br/com/poc/opentracing/rootservice/RootServiceApplication.java
+/Users/emerson/Projetos/pessoal/opentracing-poc/root-service/src/main/java/br/com/poc/opentracing/rootservice/configuration/CustomersClientConfiguration.java
+/Users/emerson/Projetos/pessoal/opentracing-poc/root-service/src/main/java/br/com/poc/opentracing/rootservice/controller/RootController.java
