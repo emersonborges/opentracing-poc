@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RootController {
 
-    private final CustomerApi customerApi;
+    private final OrdersApi ordersApi;
 
-    public RootController(CustomerApi customerApi) {
-        this.customerApi = customerApi;
+    public RootController(OrdersApi ordersApi) {
+        this.ordersApi = ordersApi;
     }
 
     @PostMapping("/start")
     public void start() {
-        customerApi.create();
+        ordersApi.create();
     }
 }

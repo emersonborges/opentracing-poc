@@ -8,6 +8,32 @@ services:
       - POSTGRES_DB=rw_customer
       - POSTGRES_USER=rw_customer
       - POSTGRES_PASSWORD=rw_customer
+    networks:
+      - custom
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+    networks:
+      - custom
+
+  kafka:
+    image: wurstmeister/kafka:1.0.0
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: 127.0.0.1
+      KAFKA_ADVERTISED_PORT: "9092"
+      KAFKA_CREATE_TOPICS: "orders:1:1"
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - zookeeper
+    networks:
+      - custom
+
   jaeger:
     image: jaegertracing/all-in-one:latest
     ports:
@@ -15,4 +41,13 @@ services:
       - "6831:6831/udp"
       - "6832:6832/udp"
       - "16686:16686"
+    networks:
+      - custom
 
+networks:
+  custom:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.167.60.0/16
