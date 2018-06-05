@@ -1,7 +1,0 @@
-br/com/poc/opentracing/customer/configuration/DatasourceConfiguration.class
-br/com/poc/opentracing/customer/controller/CustomerController.class
-br/com/poc/opentracing/customer/repository/CustomerRepository.class
-br/com/poc/opentracing/customer/model/Customer.class
-br/com/poc/opentracing/customer/OpentracingPocApplication.class
-br/com/poc/opentracing/customer/model/Customer$CustomerBuilder.class
-br/com/poc/opentracing/customer/configuration/TracerConfiguration.class

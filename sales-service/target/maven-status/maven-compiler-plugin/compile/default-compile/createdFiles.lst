@@ -1,5 +1,0 @@
-br/com/poc/opentracing/rootservice/configuration/CustomersClientConfiguration.class
-br/com/poc/opentracing/rootservice/controller/RootController.class
-br/com/poc/opentracing/rootservice/controller/CustomerApi.class
-br/com/poc/opentracing/rootservice/RootServiceApplication.class
-br/com/poc/opentracing/rootservice/configuration/TracerConfiguration.class

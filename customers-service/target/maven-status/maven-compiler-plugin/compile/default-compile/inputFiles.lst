@@ -1,6 +1,0 @@
-/Users/emerson/Projetos/pessoal/opentracing-poc/customer-service/src/main/java/br/com/poc/opentracing/customer/configuration/TracerConfiguration.java
-/Users/emerson/Projetos/pessoal/opentracing-poc/customer-service/src/main/java/br/com/poc/opentracing/customer/OpentracingPocApplication.java
-/Users/emerson/Projetos/pessoal/opentracing-poc/customer-service/src/main/java/br/com/poc/opentracing/customer/configuration/DatasourceConfiguration.java
-/Users/emerson/Projetos/pessoal/opentracing-poc/customer-service/src/main/java/br/com/poc/opentracing/customer/repository/CustomerRepository.java
-/Users/emerson/Projetos/pessoal/opentracing-poc/customer-service/src/main/java/br/com/poc/opentracing/customer/model/Customer.java
-/Users/emerson/Projetos/pessoal/opentracing-poc/customer-service/src/main/java/br/com/poc/opentracing/customer/controller/CustomerController.java
