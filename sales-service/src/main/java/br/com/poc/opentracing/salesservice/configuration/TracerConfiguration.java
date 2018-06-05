@@ -1,4 +1,4 @@
-package br.com.poc.orders.processor.configuration;
+package br.com.poc.opentracing.salesservice.configuration;
 
 import io.jaegertracing.Configuration;
 import io.opentracing.Tracer;
@@ -12,7 +12,7 @@ public class TracerConfiguration {
 
     @Bean
     public Tracer jaegerTracker(@Value("${tracer.host}") String tracerHost,
-                                @Value("${spring.application.name}") String applicationName) {
+            @Value("${spring.application.name}") String applicationName) {
         SenderConfiguration senderConfiguration = new SenderConfiguration()
                 .withAgentHost(tracerHost);
         ReporterConfiguration reporterConfiguration = new ReporterConfiguration()

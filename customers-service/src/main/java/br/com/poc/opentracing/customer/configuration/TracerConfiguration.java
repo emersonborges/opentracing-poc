@@ -1,4 +1,4 @@
-package br.com.poc.orders.processor.configuration;
+package br.com.poc.opentracing.customer.configuration;
 
 import io.jaegertracing.Configuration;
 import io.opentracing.Tracer;

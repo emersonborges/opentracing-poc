@@ -7,9 +7,9 @@
 	<artifactId>opentracing-poc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>root-service</module>
-		<module>customer-service</module>
-		<module>order-service</module>
+        <module>sales-service</module>
+		<module>customers-service</module>
+		<module>orders-service</module>
 		<module>orders-processor</module>
 	</modules>
     <packaging>pom</packaging>
@@ -44,17 +44,22 @@
 		<dependencies>
 			<dependency>
 				<groupId>br.com.poc</groupId>
-				<artifactId>root-service</artifactId>
+				<artifactId>sales-service</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>br.com.poc</groupId>
-				<artifactId>customer-service</artifactId>
+				<artifactId>customers-service</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>br.com.poc</groupId>
-				<artifactId>order-service</artifactId>
+				<artifactId>orders-service</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>br.com.poc</groupId>
+				<artifactId>orders-processor</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
