@@ -16,7 +16,7 @@ public class SalesController {
 
     @PostMapping("/sales")
     public void create() {
-        customersApi.createOffer();
+        customersApi.createCustomer();
         ordersApi.create();
     }
 }

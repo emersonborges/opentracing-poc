@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @FeignClient(value = "customers", url = "${customers.url}")
 public interface CustomerApi {
-    @PostMapping("/customers")
-    void create();
+    @PostMapping("/customers/offers")
+    void createOffer();
 }
