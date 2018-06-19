@@ -5,6 +5,7 @@ import br.com.poc.opentracing.customer.model.Offer;
 import br.com.poc.opentracing.customer.repository.CustomerRepository;
 import br.com.poc.opentracing.customer.repository.OfferRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -38,5 +39,10 @@ public class CustomerController {
                 .customer(customer)
                 .build();
         offerRepository.save(offer);
+    }
+
+    @GetMapping("/oi")
+    public String oi() {
+        return "OI";
     }
 }
